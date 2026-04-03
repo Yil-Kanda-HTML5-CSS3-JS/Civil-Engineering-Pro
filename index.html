@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Civil Engineering</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap">
+
+    <link rel="stylesheet" href="https://trial.ovationthemes.com/civil-engineering/wp-content/themes/civil-engineering-pro/style.css">
+    <link rel="stylesheet" href="https://trial.ovationthemes.com/civil-engineering/wp-content/themes/civil-engineering-pro/assets/css/animation.css">
+    <link rel="stylesheet" href="https://trial.ovationthemes.com/civil-engineering/wp-content/themes/civil-engineering-pro/assets/css/media.css">
+    <link rel="stylesheet" href="popup-video.css">
+
+    <style>
+        .header-buy-now a {
+            padding: 13px 20px;
+            background: #fab915;
+            color: #000;
+            border-radius: 5px;
+            transition: 0.4s ease-in-out;
+        }
+        .header-buy-now a:hover {
+            background: #2a2a34;
+            color: #fff !important;
+        }
+        .footer-buy-now a {
+            padding: 13px 20px;
+            background: #fff;
+            color: #000;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: 0.4s ease-in-out;
+        }
+        .footer-buy-now a:hover {
+            background: #2a2a34;
+            color: #fff !important;
+        }
+        .footer-buy-now {
+            margin-top: 12px;
+        }
+        #masthead {
+            z-index: 999;
+        }
+
+        /* Responsive styles */
+        @media screen and (max-width: 1000px) {
+            nav#site-navigation ul {
+                border: unset;
+            }
+            .menubar .nav ul li, .menubar.scrolled .main-navigation li {
+                padding: 12px 0;
+            }
+            .sidenav {
+                padding-top: 100px;
+            }
+            .sidenav .closebtn {
+                top: 45px;
+                right: 25px;
+            }
+        }
+
+        @media screen and (max-width: 1000px) and (min-width: 768px) {
+            p.slide-txt, .ftr-social-icons i {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body class="home wp-singular page-template page-template-page-template page-template-home-page page-template-page-templatehome-page-php page page-id-5 wp-theme-civil-engineering-pro currency-0">
+
+  <header class="site-header" id="masthead">
+    <div id="header">
+      <div class="header-wrap">
+        <div class="header-nav-box" id="nav-box">
+          <div class="container">
+            <div class="row py-3">
+              <div class="col-lg-3 col-md-4 col-12 align-self-center">
+                <div class="logo text-center text-lg-left text-md-center">
+                  <div class="logo">
+                    <a href="/" rel="home"><img alt="Civil Engineering" src="/assets/images/logo.png"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-8 col-md-4 col-6 header-nav align-self-center text-center">
+                <div class="menubar m-0 mt-md-0">
+                  <div class="innermenubox">
+                    <div class="toggle-nav mobile-menu text-center my-2 mb-md-0">
+                      <span onclick="openNav()"><i class="fas fa-bars p-2"></i></span>
+                    </div>
+                    <div class="nav sidenav" id="mySidenav">
+                      <nav class="main-navigation" id="site-navigation">
+                        <a class="closebtn mobile-menu" href="javascript:void(0)" onclick="closeNav()"><i class="fas fa-times"></i></a>
+                        <div class="menu clearfix">
+                          <ul class="clearfix mobile_nav" id="menu-main">
+                            <li>
+                              <a href="/">Home</a>
+                            </li>
+                            <li class="menu-item-has-children">
+                              <a href="#">Page</a>
+                              <ul class="sub-menu">
+                                <li>
+                                  <a href="#">Page Left Sidebar</a>
+                                </li>
+                                <li>
+                                  <a href="#">Page Right Sidebar</a>
+                                </li>
+                                <li>
+                                  <a href="#">Typography</a>
+                                </li>
+                                <li>
+                                  <a href="#">Contact Us</a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                              <a href="#">Blog</a>
+                              <ul class="sub-menu">
+                                <li>
+                                  <a href="#">Blog Left Sidebar</a>
+                                </li>
+                                <li>
+                                  <a href="#">Blog Right Sidebar</a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a href="#">Project Details</a>
+                            </li>
+                            <li>
+                              <a href="#">Services</a>
+                            </li>
+                            <li class="header-buy-now">
+                              <a href="#">Buy Now</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-1 col-md-4 col-6 align-self-center pr-lg-0 text-lg-right text-center">
+                <div class="header-search">
+                  <div class="header-search-wrapper">
+                    <span class="search-main"><i class="fas fa-search"></i></span>
+                    <div class="search-form-main clearfix">
+                      <form action="/" class="search-form" method="get" role="search">
+                        <label><input class="search-field" name="s" placeholder="Search …" type="search"></label> <input class="search-submit" type="submit" value="Search">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="slider">
+    <div class="carousel slide carousel-fade" data-interval="5000" data-ride="carousel" id="carouselExampleIndicators">
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <div class="slider-main-box w-100">
+            <div class="slide-img"><img src="https://trial.ovationthemes.com/civil-engineering/wp-content/themes/civil-engineering-pro/assets/images/slides/slider1.png"></div>
+            <div class="inner_carousel">
+              <div class="slider-box">
+                <h1>We Design Your Future!</h1>
+                <p class="slide-txt">Pariatur excepturi labore atque ea officia delectus minima tenetur placeat ab, earum omnis at architecto quibusdam sapiente et totam. Nulla, non, voluptate.</p>
+                <div class="slide_double_btn">
+                  <div class="slide_btn py-3">
+                    <a class="service-book-btn btn mr-3 mb-lg-0 mb-2 mb-md-0" href="#"><span>Get a quote</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="slider-main-box w-100">
+            <div class="slide-img"><img src="https://trial.ovationthemes.com/civil-engineering/wp-content/themes/civil-engineering-pro/assets/images/slides/slider2.png"></div>
+            <div class="inner_carousel">
+              <div class="slider-box">
+                <h1>We Design Your Future!</h1>
+                <p class="slide-txt">Pariatur excepturi labore atque ea officia delectus minima tenetur placeat ab, earum omnis at architecto quibusdam sapiente et totam. Nulla, non, voluptate.</p>
+                <div class="slide_double_btn">
+                  <div class="slide_btn py-3">
+                    <a class="service-book-btn btn mr-3 mb-lg-0 mb-2 mb-md-0" href="#"><span>Get a quote</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="slider-main-box w-100">
+            <div class="slide-img"><img src="https://trial.ovationthemes.com/civil-engineering/wp-content/themes/civil-engineering-pro/assets/images/slides/slider3.png"></div>
+            <div class="inner_carousel">
+              <div class="slider-box">
+                <h1>We Design Your Future!</h1>
+                <p class="slide-txt">Pariatur excepturi labore atque ea officia delectus minima tenetur placeat ab, earum omnis at architecto quibusdam sapiente et totam. Nulla, non, voluptate.</p>
+                <div class="slide_double_btn">
+                  <div class="slide_btn py-3">
+                    <a class="service-book-btn btn mr-3 mb-lg-0 mb-2 mb-md-0" href="#"><span>Get a quote</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    </div>
+    <div class="clearfix"></div>
+  </section>
+
+  <section class="py-5" id="about" style="">
+    <div class="container-fluid">
+      <div class="row abt-in">
+        <div class="col-lg-4 col-md-12 col-12">
+          <div class="about-img-box"><img src="https://trial.ovationthemes.com/civil-engineering/wp-content/themes/civil-engineering-pro/assets/images/about/about-img.png"></div>
+        </div>
+        <div class="col-lg-8 col-md-12 col-12 pr-lg-0">
+          <div class="abt-info">
+            <div class="abt-box">
+              <h2 class="abt-main-head text-effect">About Us</h2>
+              <h6 class="abt-sm-head">Lorem ipsum dolor sit amet, consectetur adopesi</h6>
+              <p class="abt-para py-3">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,lorem quis bibendum auctor, nisi elit consequat psum, necsagittis sem nibh id elit. Proin gravida nibh vel velit auctor aliq uet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat psum, nec sagittis sem nibh id elit.</p>
+              <div class="about-btn">
+                <a class="abt-read-btn btn" href="#"><span>Read More</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5" id="our_services" style="">
+    <div class="container">
+      <div class="serv-head text-center py-5">
+        <h2 class="service-main-head text-effect">Services We Offer</h2>
+        <p class="service-text mx-auto">Lorem ipsum dolor sit amet, consectetur adopesi cing elit, sed do eiusmod tempor incunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+      </div>
+      <div class="serv-group">
+        <div class="owl-carousel">
+          <div class="service-opacity">
+            <div class="serv-box">
+              <img alt="" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" height="371" sizes="(max-width: 580px) 100vw, 580px" src="https://trial.ovationthemes.com/civil-engineering/wp-content/uploads/sites/83/2025/06/service4.png" srcset="https://trial.ovationthemes.com/civil-engineering/wp-content/uploads/sites/83/2025/06/service4.png 580w, https://trial.ovationthemes.com/civil-engineering/wp-content/uploads/sites/83/2025/06/service4-300x192.png 300w" width="580">
+              <div class="serv-box-content p-4">
+                <h5 class="serv-name"><a href="https://trial.ovationthemes.com/civil-engineering/service/architecture-2/">Architecture</a></h5>
+                <p class="serv-inn-txt mb-0">Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor ncididunt.Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor ncididunt</p><a class="serv-inn-btn btn mt-2" href="https://trial.ovationthemes.com/civil-engineering/service/architecture-2/"><span>Learn More</span></a>
+              </div>
+              <div class="serv-display">
+                <h5 class="ser-dis-name text-center mx-auto w-50">Architecture</h5>
+              </div>
+            </div>
+          </div>
+          <div class="service-opacity">
+            <div class="serv-box">
+              <img alt="" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" height="374" sizes="(max-width: 580px) 100vw, 580px" src="https://trial.ovationthemes.com/civil-engineering/wp-content/uploads/sites/83/2025/06/service3.png" srcset="https://trial.ovationthemes.com/civil-engineering/wp-content/uploads/sites/83/2025/06/service3.png 580w, https://trial.ovationthemes.com/civil-engineering/wp-content/uploads/sites/83/2025/06/service3-300x193.png 300w" width="580">
+              <div class="serv-box-content p-4">
+                <h5 class="serv-name"><a href="https://trial.ovationthemes.com/civil-engineering/service/sustainable-design/">Sustainable Design</a></h5>
+                <p class="serv-inn-txt mb-0">Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor ncididunt.Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor ncididunt</p><a class="serv-inn-btn btn mt-2" href="https://trial.ovationthemes.com/civil-engineering/service/sustainable-design/"><span>Learn More</span></a>
+              </div>
+              <div class="serv-display">
+                <h5 class="ser-dis-name text-center mx-auto w-50">Sustainable Design</h5>
+              </div>
+            </div>
+          </div>
+          <div class="service-opacity">
+            <div class="serv-box">
+              <img alt="" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" height="371" sizes="(max-width: 580px) 100vw, 580px" src="https://trial.ovationthemes.com/civil-engineering/wp-content/uploads/sites/83/2025/06/service2.png" srcset="https://trial.ovationthemes.com/civil-engineering/wp-content/uploads/sites/83/2025/06/service2.png 580w, https://trial.ovationthemes.com/civil-engineering/wp-content/uploads/sites/83/2025/06/service2-300x192.png 300w" width="580">
+              <div class="serv-box-content p-4">
+                <h5 class="serv-name"><a href="https://trial.ovationthemes.com/civil-engineering/service/interior/">Interior</a></h5>
+                <p class="serv-inn-txt mb-0">Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor ncididunt.Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor ncididunt</p><a class="serv-inn-btn btn mt-2" href="https://trial.ovationthemes.com/civil-engineering/service/interior/"><span>Learn More</span></a>
+              </div>
+              <div class="serv-display">
+                <h5 class="ser-dis-name text-center mx-auto w-50">Interior</h5>
+              </div>
+            </div>
+          </div>
+          <div class="service-opacity">
+            <div class="serv-box">
+              <img alt="" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" height="371" sizes="(max-width: 580px) 100vw, 580px" src="https://trial.ovationthemes.com/civil-engineering/wp-content/uploads/sites/83/2025/06/service1.png" srcset="https://trial.ovationthemes.com/civil-engineering/wp-content/uploads/sites/83/2025/06/service1.png 580w, https://trial.ovationthemes.com/civil-engineering/wp-content/uploads/sites/83/2025/06/service1-300x192.png 300w" width="580">
+              <div class="serv-box-content p-4">
+                <h5 class="serv-name"><a href="https://trial.ovationthemes.com/civil-engineering/service/architecture/">Architecture</a></h5>
+                <p class="serv-inn-txt mb-0">Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor ncididunt.Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor ncididunt</p><a class="serv-inn-btn btn mt-2" href="https://trial.ovationthemes.com/civil-engineering/service/architecture/"><span>Learn More</span></a>
+              </div>
+              <div class="serv-display">
+                <h5 class="ser-dis-name text-center mx-auto w-50">Architecture</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5" id="featured_work" style="">
+    <div class="container">
+      <div class="featured_work_head py-4">
+        <h2 class="work-head text-effect">Featured Work</h2>
+        <p class="feat-text mb-0">Lorem ipsum dolor sit amet, consectetur adopesi cing elit, sed do eiusmod tempor incunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+      </div>
+      <div class="row first py-3">
+        <div class="col-lg-8 col-md-8 col-12 fet1 pb-3 pb-lg-0">
+          <div class="work-info">
+            <div class="f1img-box"><img src="https://trial.ovationthemes.com/civil-engineering/wp-content/themes/civil-engineering-pro/assets/images/featured/feature1.png"></div>
+            <div class="work-bg">
+              <div class="feat-content text-center">
+                <p class="feat-sm-hd mb-0">3D Modeling</p>
+                <h2 class="work-name py-0">With swimming pool</h2>
+                <p class="work-loctn mb-0">Strasbourg, France</p>
+                <div class="work-btn py-2">
+                  <a class="work-read-btn btn" href="#"><span>Read More</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 fet2 col-12">
+          <div class="work-info">
+            <div class="f1img-box"><img src="https://trial.ovationthemes.com/civil-engineering/wp-content/themes/civil-engineering-pro/assets/images/featured/feature2.png"></div>
+            <div class="work-bg">
+              <div class="feat-content text-center">
+                <p class="feat-sm-hd mb-0">3D Modeling</p>
+                <h2 class="work-name py-0">With swimming pool</h2>
+                <p class="work-loctn mb-0">Strasbourg, France</p>
+                <div class="work-btn py-2">
+                  <a class="work-read-btn btn" href="#"><span>Read More</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row second py-3">
+        <div class="col-lg-6 col-md-6 col-12 fet3 pb-3 pb-lg-0">
+          <div class="work-info">
+            <div class="f1img-box"><img src="https://trial.ovationthemes.com/civil-engineering/wp-content/themes/civil-engineering-pro/assets/images/featured/feature3.png"></div>
+            <div class="work-bg">
+              <div class="feat-content text-center">
+                <p class="feat-sm-hd mb-0">3D Modeling</p>
+                <h2 class="work-name py-0">With swimming pool</h2>
+                <p class="work-loctn mb-0">Strasbourg, France</p>
+                <div class="work-btn py-2">
+                  <a class="work-read-btn btn" href="#"><span>Read More</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-12 fet4">
+          <div class="work-info">
+            <div class="f1img-box"><img src="https://trial.ovationthemes.com/civil-engineering/wp-content/themes/civil-engineering-pro/assets/images/featured/feature4.png"></div>
+            <div class="work-bg">
+              <div class="feat-content text-center">
+                <p class="feat-sm-hd mb-0">3D Modeling</p>
+                <h2 class="work-name py-0">With swimming pool</h2>
+                <p class="work-loctn mb-0">Strasbourg, France</p>
+                <div class="work-btn py-2">
+                  <a class="work-read-btn btn" href="#"><span>Read More</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row third py-3">
+        <div class="col-lg-4 col-md-4 col-12 fet5 pb-3 pb-lg-0">
+          <div class="work-info">
+            <div class="f1img-box"><img src="https://trial.ovationthemes.com/civil-engineering/wp-content/themes/civil-engineering-pro/assets/images/featured/feature5.png"></div>
+            <div class="work-bg">
+              <div class="feat-content text-center">
+                <p class="feat-sm-hd mb-0">3D Modeling</p>
+                <h2 class="work-name py-0">With swimming pool</h2>
+                <p class="work-loctn mb-0">Strasbourg, France</p>
+                <div class="work-btn py-2">
+                  <a class="work-read-btn btn" href="#"><span>Read More</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8 col-md-8 col-12 fet6">
+          <div class="work-info">
+            <div class="f1img-box"><img src="https://trial.ovationthemes.com/civil-engineering/wp-content/themes/civil-engineering-pro/assets/images/featured/feature6.png"></div>
+            <div class="work-bg">
+              <div class="feat-content text-center">
+                <p class="feat-sm-hd mb-0">3D Modeling</p>
+                <h2 class="work-name py-0">With swimming pool</h2>
+                <p class="work-loctn mb-0">Strasbourg, France</p>
+                <div class="work-btn py-2">
+                  <a class="work-read-btn btn" href="#"><span>Read More</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-lg-5 py-2" id="our_video">
+    <div class="video-bg" style="background-image:url(&#039;https://trial.ovationthemes.com/civil-engineering/wp-content/themes/civil-engineering-pro/assets/images/video/video-bg.png&#039;)">
+      <div class="vid-inn-bg">
+        <div class="container">
+          <div class="vid-info">
+            <div class="video-head text-center py-lg-5 py-3">
+              <h2 class="video-main-head text-effect">Watch Full Video To Know About Us More</h2>
+            </div>
+            <div class="our-video-btn text-center py-lg-5 py-3">
+              <div class="you-btn mx-auto">
+                <a class="popup-youtube" href="https://www.youtube.com/watch?v=gKddX70lNMg"><i aria-hidden="true" class="fas fa-play">&nbsp;</i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5" id="latest_news" style="">
+    <div class="container">
+      <div class="news-head py-4">
+        <h2 class="news-main-head text-effect">Latest News</h2>
+        <p class="news-txt">Lorem ipsum dolor sit amet, consectetur adopesi cing elit, sed do eiusmod tempor incunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+      </div>
+      <div class="news-info">
+        <div class="owl-carousel">
+          <div class="news-box m-2">
+            <div class="img-box"><img alt="" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" height="549" sizes="(max-width: 454px) 100vw, 454px" src="https://trial.ovationthemes.com/civil-engineering/wp-content/uploads/sites/83/2025/06/news3.png" srcset="https://trial.ovationthemes.com/civil-engineering/wp-content/uploads/sites/83/2025/06/news3.png 454w, https://trial.ovationthemes.com/civil-engineering/wp-content/uploads/sites/83/2025/06/news3-248x300.png 248w" width="454"></div>
+            <div class="blog-date text-center py-2 px-3" style="">
+              <h3 class="news-day py-0">04</h3>
+              <h3 class="news-mon py-0">Jun</h3>
+            </div>
+            <div class="lower-new-box py-2 px-3">
+              <div class="news-inn-title">
+                <h3 class="post-title py-0"><a href="https://trial.ovationthemes.com/civil-engineering/2025/06/04/survey-in-2012-found/">Survey in 2012 found</a></h3>
+              </div>
+              <p class="news-post-txt mb-0">Lorem ipsum dolor sit amet, consec tetur dipiscing elit, sed do eiusmod tempor incididunt.</p>
+              <div class="news-button">
+                <a class="news-btn btn pl-0" href="https://trial.ovationthemes.com/civil-engineering/2025/06/04/survey-in-2012-found/"><span>Read More</span></a>
+              </div>
+            </div>
+          </div>
+          <div class="news-box m-2">
+            <div class="img-box"><img alt="" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" height="549" sizes="(max-width: 455px) 100vw, 455px" src="https://trial.ovationthemes.com/civil-engineering/wp-content/uploads/sites/83/2025/06/news4.png" srcset="https://trial.ovationthemes.com/civil-engineering/wp-content/uploads/sites/83/2025/06/news4.png 455w, https://trial.ovationthemes.com/civil-engineering/wp-content/uploads/sites/83/2025/06/news4-249x300.png 249w" width="455"></div>
+            <div class="blog-date text-center py-2 px-3" style="">
+              <h3 class="news-day py-0">04</h3>
+              <h3 class="news-mon py-0">Jun</h3>
+            </div>
+            <div class="lower-new-box py-2 px-3">
+              <div class="news-inn-title">
+                <h3 class="post-title py-0"><a href="https://trial.ovationthemes.com/civil-engineering/2025/06/04/students-in-architecture-2/">Students in architecture</a></h3>
+              </div>
+              <p class="news-post-txt mb-0">Lorem ipsum dolor sit amet, consec tetur dipiscing elit, sed do eiusmod tempor incididunt.</p>
+              <div class="news-button">
+                <a class="news-btn btn pl-0" href="https://trial.ovationthemes.com/civil-engineering/2025/06/04/students-in-architecture-2/"><span>Read More</span></a>
+              </div>
+            </div>
+          </div>
+          <div class="news-box m-2">
+            <div class="img-box"><img alt="" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" height="545" sizes="(max-width: 455px) 100vw, 455px" src="https://trial.ovationthemes.com/civil-engineering/wp-content/uploads/sites/83/2025/06/news1.png" srcset="https://trial.ovationthemes.com/civil-engineering/wp-content/uploads/sites/83/2025/06/news1.png 455w, https://trial.ovationthemes.com/civil-engineering/wp-content/uploads/sites/83/2025/06/news1-250x300.png 250w" width="455"></div>
+            <div class="blog-date text-center py-2 px-3" style="">
+              <h3 class="news-day py-0">04</h3>
+              <h3 class="news-mon py-0">Jun</h3>
+            </div>
+            <div class="lower-new-box py-2 px-3">
+              <div class="news-inn-title">
+                <h3 class="post-title py-0"><a href="https://trial.ovationthemes.com/civil-engineering/2025/06/04/students-in-architecture/">Students in architecture</a></h3>
+              </div>
+              <p class="news-post-txt mb-0">Lorem ipsum dolor sit amet, consec tetur dipiscing elit, sed do eiusmod tempor incididunt.</p>
+              <div class="news-button">
+                <a class="news-btn btn pl-0" href="https://trial.ovationthemes.com/civil-engineering/2025/06/04/students-in-architecture/"><span>Read More</span></a>
+              </div>
+            </div>
+          </div>
+          <div class="news-box m-2">
+            <div class="img-box"><img alt="" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" height="548" sizes="(max-width: 455px) 100vw, 455px" src="https://trial.ovationthemes.com/civil-engineering/wp-content/uploads/sites/83/2025/06/news2.png" srcset="https://trial.ovationthemes.com/civil-engineering/wp-content/uploads/sites/83/2025/06/news2.png 455w, https://trial.ovationthemes.com/civil-engineering/wp-content/uploads/sites/83/2025/06/news2-249x300.png 249w" width="455"></div>
+            <div class="blog-date text-center py-2 px-3" style="">
+              <h3 class="news-day py-0">04</h3>
+              <h3 class="news-mon py-0">Jun</h3>
+            </div>
+            <div class="lower-new-box py-2 px-3">
+              <div class="news-inn-title">
+                <h3 class="post-title py-0"><a href="https://trial.ovationthemes.com/civil-engineering/2025/06/04/the-5th-world-library/">The 5th world library</a></h3>
+              </div>
+              <p class="news-post-txt mb-0">Lorem ipsum dolor sit amet, consec tetur dipiscing elit, sed do eiusmod tempor incididunt.</p>
+              <div class="news-button">
+                <a class="news-btn btn pl-0" href="https://trial.ovationthemes.com/civil-engineering/2025/06/04/the-5th-world-library/"><span>Read More</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="" id="achievement" style="background-image:url(&#039;https://trial.ovationthemes.com/civil-engineering/wp-content/themes/civil-engineering-pro/assets/images/achieve/achieve-bg.png&#039;)">
+    <div class="achieve-bg py-5">
+      <div class="container">
+        <div class="achieve-head">
+          <h2 class="achieve-main-head text-effect">Our Achievements</h2>
+          <p class="achieve-txt">Lorem ipsum dolor sit amet, consectetur adopesi cing elit, sed do eiusmod tempor incunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+        </div>
+        <div class="row pt-3 pb-5">
+          <div class="owl-carousel">
+            <div class="achieve-box text-center text-lg-left">
+              <h3 class="achieve-count">200+</h3>
+              <h4 class="achieve-inner-head">Projects Completed</h4>
+            </div>
+            <div class="achieve-box text-center text-lg-left">
+              <h3 class="achieve-count">30+</h3>
+              <h4 class="achieve-inner-head">No. Of Awards</h4>
+            </div>
+            <div class="achieve-box text-center text-lg-left">
+              <h3 class="achieve-count">900+</h3>
+              <h4 class="achieve-inner-head">Happy Clients</h4>
+            </div>
+            <div class="achieve-box text-center text-lg-left">
+              <h3 class="achieve-count">25+</h3>
+              <h4 class="achieve-inner-head">Years Completed</h4>
+            </div>
+            <div class="achieve-box text-center text-lg-left">
+              <h3 class="achieve-count">200+</h3>
+              <h4 class="achieve-inner-head">Projects Completed</h4>
+            </div>
+            <div class="achieve-box text-center text-lg-left">
+              <h3 class="achieve-count">30+</h3>
+              <h4 class="achieve-inner-head">No. Of Awards</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5" id="company" style="">
+    <div class="brand-bg">
+      <div class="container">
+        <div class="owl-carousel">
+          <div class="brand-imgs"><img src="https://trial.ovationthemes.com/civil-engineering/wp-content/themes/civil-engineering-pro/assets/images/company/company1.png"></div>
+          <div class="brand-imgs"><img src="https://trial.ovationthemes.com/civil-engineering/wp-content/themes/civil-engineering-pro/assets/images/company/company2.png"></div>
+          <div class="brand-imgs"><img src="https://trial.ovationthemes.com/civil-engineering/wp-content/themes/civil-engineering-pro/assets/images/company/company3.png"></div>
+          <div class="brand-imgs"><img src="https://trial.ovationthemes.com/civil-engineering/wp-content/themes/civil-engineering-pro/assets/images/company/company4.png"></div>
+          <div class="brand-imgs"><img src="https://trial.ovationthemes.com/civil-engineering/wp-content/themes/civil-engineering-pro/assets/images/company/company5.png"></div>
+          <div class="brand-imgs"><img src="https://trial.ovationthemes.com/civil-engineering/wp-content/themes/civil-engineering-pro/assets/images/company/company6.png"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-lg-5 py-2 text-center" id="our_experts">
+    <div class="staff-bg" style="">
+      <div class="staff-head pb-5">
+        <h2 class="staff-main-head text-effect">Experts We Rely On</h2>
+        <p class="staff-text mx-auto">Lorem ipsum dolor sit amet, consectetur adopesi cing elit, sed do eiusmod tempor incunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="staff-group">
+        <div class="owl-carousel">
+          <div class="staff-box">
+            <div class="team-bg"><img alt="" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" height="559" sizes="(max-width: 460px) 100vw, 460px" src="https://trial.ovationthemes.com/civil-engineering/wp-content/uploads/sites/83/2025/06/team6.png" srcset="https://trial.ovationthemes.com/civil-engineering/wp-content/uploads/sites/83/2025/06/team6.png 460w, https://trial.ovationthemes.com/civil-engineering/wp-content/uploads/sites/83/2025/06/team6-247x300.png 247w" width="460"></div>
+            <div class="box-content">
+              <div class="staff-social-icon">
+                <a class="rounded-circle" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a> <a class="rounded-circle" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a> <a class="rounded-circle" href="https://in.twitter.com/"><i class="fa-brands fa-twitter"></i></a> <a class="rounded-circle" href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="staff-info py-2">
+              <h5 class="staff-name py-0"><a href="https://trial.ovationthemes.com/civil-engineering/our_experts/jack-smith-2/">Jack Smith</a></h5>
+              <p class="staff-desig mb-0">Architect</p>
+            </div>
+          </div>
+          <div class="staff-box">
+            <div class="team-bg"><img alt="" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" height="550" sizes="(max-width: 460px) 100vw, 460px" src="https://trial.ovationthemes.com/civil-engineering/wp-content/uploads/sites/83/2025/06/team5.png" srcset="https://trial.ovationthemes.com/civil-engineering/wp-content/uploads/sites/83/2025/06/team5.png 460w, https://trial.ovationthemes.com/civil-engineering/wp-content/uploads/sites/83/2025/06/team5-251x300.png 251w" width="460"></div>
+            <div class="box-content">
+              <div class="staff-social-icon">
+                <a class="rounded-circle" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a> <a class="rounded-circle" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a> <a class="rounded-circle" href="https://in.twitter.com/"><i class="fa-brands fa-twitter"></i></a> <a class="rounded-circle" href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="staff-info py-2">
+              <h5 class="staff-name py-0"><a href="https://trial.ovationthemes.com/civil-engineering/our_experts/emmie-fernandis-2/">Emmie Fernandis</a></h5>
+              <p class="staff-desig mb-0">Architect</p>
+            </div>
+          </div>
+          <div class="staff-box">
+            <div class="team-bg"><img alt="" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" height="561" sizes="(max-width: 460px) 100vw, 460px" src="https://trial.ovationthemes.com/civil-engineering/wp-content/uploads/sites/83/2025/06/team4.png" srcset="https://trial.ovationthemes.com/civil-engineering/wp-content/uploads/sites/83/2025/06/team4.png 460w, https://trial.ovationthemes.com/civil-engineering/wp-content/uploads/sites/83/2025/06/team4-246x300.png 246w" width="460"></div>
+            <div class="box-content">
+              <div class="staff-social-icon">
+                <a class="rounded-circle" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a> <a class="rounded-circle" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a> <a class="rounded-circle" href="https://in.twitter.com/"><i class="fa-brands fa-twitter"></i></a> <a class="rounded-circle" href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="staff-info py-2">
+              <h5 class="staff-name py-0"><a href="https://trial.ovationthemes.com/civil-engineering/our_experts/emily-thomas/">Emily Thomas</a></h5>
+              <p class="staff-desig mb-0">Art Director</p>
+            </div>
+          </div>
+          <div class="staff-box">
+            <div class="team-bg"><img alt="" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" height="557" sizes="(max-width: 460px) 100vw, 460px" src="https://trial.ovationthemes.com/civil-engineering/wp-content/uploads/sites/83/2025/06/team3.png" srcset="https://trial.ovationthemes.com/civil-engineering/wp-content/uploads/sites/83/2025/06/team3.png 460w, https://trial.ovationthemes.com/civil-engineering/wp-content/uploads/sites/83/2025/06/team3-248x300.png 248w" width="460"></div>
+            <div class="box-content">
+              <div class="staff-social-icon">
+                <a class="rounded-circle" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a> <a class="rounded-circle" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a> <a class="rounded-circle" href="https://in.twitter.com/"><i class="fa-brands fa-twitter"></i></a> <a class="rounded-circle" href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="staff-info py-2">
+              <h5 class="staff-name py-0"><a href="https://trial.ovationthemes.com/civil-engineering/our_experts/alfred-howard/">Alfred Howard</a></h5>
+              <p class="staff-desig mb-0">Technical Manager</p>
+            </div>
+          </div>
+          <div class="staff-box">
+            <div class="team-bg"><img alt="" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" height="559" sizes="(max-width: 460px) 100vw, 460px" src="https://trial.ovationthemes.com/civil-engineering/wp-content/uploads/sites/83/2025/06/team2.png" srcset="https://trial.ovationthemes.com/civil-engineering/wp-content/uploads/sites/83/2025/06/team2.png 460w, https://trial.ovationthemes.com/civil-engineering/wp-content/uploads/sites/83/2025/06/team2-247x300.png 247w" width="460"></div>
+            <div class="box-content">
+              <div class="staff-social-icon">
+                <a class="rounded-circle" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a> <a class="rounded-circle" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a> <a class="rounded-circle" href="https://in.twitter.com/"><i class="fa-brands fa-twitter"></i></a> <a class="rounded-circle" href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="staff-info py-2">
+              <h5 class="staff-name py-0"><a href="https://trial.ovationthemes.com/civil-engineering/our_experts/jack-smith/">Jack Smith</a></h5>
+              <p class="staff-desig mb-0">Architect</p>
+            </div>
+          </div>
+          <div class="staff-box">
+            <div class="team-bg"><img alt="" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" height="550" sizes="(max-width: 460px) 100vw, 460px" src="https://trial.ovationthemes.com/civil-engineering/wp-content/uploads/sites/83/2025/06/team1.png" srcset="https://trial.ovationthemes.com/civil-engineering/wp-content/uploads/sites/83/2025/06/team1.png 460w, https://trial.ovationthemes.com/civil-engineering/wp-content/uploads/sites/83/2025/06/team1-251x300.png 251w" width="460"></div>
+            <div class="box-content">
+              <div class="staff-social-icon">
+                <a class="rounded-circle" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a> <a class="rounded-circle" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a> <a class="rounded-circle" href="https://in.twitter.com/"><i class="fa-brands fa-twitter"></i></a> <a class="rounded-circle" href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="staff-info py-2">
+              <h5 class="staff-name py-0"><a href="https://trial.ovationthemes.com/civil-engineering/our_experts/emmie-fernandis/">Emmie Fernandis</a></h5>
+              <p class="staff-desig mb-0">Architect</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5" id="new_project" style="">
+    <div class="container">
+      <div class="pro-bg p-lg-5 p-3 p-md-4">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-12">
+            <div class="project-head">
+              <h2 class="project-main-head text-effect">Let’s Start New Project</h2>
+              <p class="project-text">Lorem ipsum dolor sit amet, consectetur adopesi cing elit,dolore magna aliqua. Ut enim ad minim veniam,</p>
+            </div>
+            <div class="pro-con-info py-4">
+              <p class="npmail-det"><i class="fas fa-envelope mr-2"></i> <a class="np-mail" href="mailto:%20info@designarchitect.com">info@designarchitect.com</a></p>
+              <p class="npcall-det"><i class="fa-solid fa-phone mr-2"></i> <a class="np-call" href="tel:%20+1%2023%20456%207890">+1 23 456 7890</a></p>
+              <p class="npadd-det"><i class="fas fa-map-marker-alt mr-2"></i> <a class="np-address" href="https://goo.gl/maps/nq3KW7oULZxVS9YP8"><span>No.40 Marie Sreet 15/2 NewYork City, USA</span></a></p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-12">
+            <div class="contac-form">
+              <div class="wpcf7 no-js" data-wpcf7-id="45" dir="ltr" id="wpcf7-f45-o1" lang="">
+                <div class="screen-reader-response">
+                  <p aria-atomic="true" aria-live="polite" role="status"></p>
+                  <ul></ul>
+                </div>
+                <form action="/civil-engineering/#wpcf7-f45-o1" aria-label="Contact form" class="wpcf7-form init" data-status="init" method="post" novalidate="novalidate">
+                  <fieldset class="hidden-fields-container">
+                    <input name="_wpcf7" type="hidden" value="45"><input name="_wpcf7_version" type="hidden" value="6.1"><input name="_wpcf7_locale" type="hidden" value=""><input name="_wpcf7_unit_tag" type="hidden" value="wpcf7-f45-o1"><input name="_wpcf7_container_post" type="hidden" value="0"><input name="_wpcf7_posted_data_hash" type="hidden" value="">
+                  </fieldset>
+                  <div class="row npform-det text-center">
+                    <div class="col-lg-6 col-md-6 col-12">
+                      <p><span class="wpcf7-form-control-wrap" data-name="YourName"><input aria-invalid="false" class="wpcf7-form-control wpcf7-text npcontac-name" maxlength="400" name="YourName" placeholder="Name" size="40" type="text" value=""></span></p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                      <p><span class="wpcf7-form-control-wrap" data-name="yourcall"><input aria-invalid="false" class="wpcf7-form-control wpcf7-tel wpcf7-text wpcf7-validates-as-tel npcontac-call" maxlength="400" name="yourcall" placeholder="Phone No." size="40" type="tel" value=""></span></p>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-12">
+                      <p><span class="wpcf7-form-control-wrap" data-name="youremail"><input aria-invalid="false" class="wpcf7-form-control wpcf7-email wpcf7-text wpcf7-validates-as-email npcontac-email" maxlength="400" name="youremail" placeholder="Email Id" size="40" type="email" value=""></span></p>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-12">
+                      <p><span class="wpcf7-form-control-wrap" data-name="youradd">
+                      <textarea aria-invalid="false" class="wpcf7-form-control wpcf7-textarea npcontac-mess" cols="40" maxlength="2000" name="youradd" placeholder="Message" rows="10"></textarea></span></p>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-12 npform-send-btn text-center pl-5">
+                      <p><input class="wpcf7-form-control wpcf7-submit has-spinner npcontactsec-sumbit" type="submit" value="Send"></p>
+                    </div>
+                  </div>
+                  <div aria-hidden="true" class="wpcf7-response-output"></div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5" id="testimonials" style="">
+    <div class="container">
+      <div class="testi-head">
+        <h2 class="testi-main-head text-effect">Testimonials</h2>
+        <p class="testi-text">Lorem ipsum dolor sit amet, consectetur adopesi cing elit, sed do eiusmod tempor incunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+      </div>
+      <div class="row testim-info pt-4 pl-4">
+        <div class="col-lg-3 col-md-3 col-12 align-self-center">
+          <div class="project-tabs py-4">
+            <ul class="testi-tabs mb-0">
+              <li class="nav-item">
+                <a class="nav-link py-2 px-0 active hvr-shrink" data-toggle="tab" href="#project_tab1">David Johnson <span class="screen-reader-text">Link Title</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link py-2 px-0 hvr-shrink" data-toggle="tab" href="#project_tab2">Mac Thomas <span class="screen-reader-text">Link Title</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link py-2 px-0 hvr-shrink" data-toggle="tab" href="#project_tab3">Susane Fernandis <span class="screen-reader-text">Link Title</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link py-2 px-0 hvr-shrink" data-toggle="tab" href="#project_tab4">Jany Luis <span class="screen-reader-text">Link Title</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link py-2 px-0 hvr-shrink" data-toggle="tab" href="#project_tab5">Harry Melis <span class="screen-reader-text">Link Title</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-1 col-md-1 col-12"></div>
+        <div class="col-lg-8 col-md-8 col-12 align-self-center">
+          <div class="tab-content" id="projects-dec">
+            <div class="outer_tab tab-pane fade in active show" id="project_tab1">
+              <div class="testi-box text-center px-5 py-3">
+                <img class="testi-leftimg" src="https://trial.ovationthemes.com/civil-engineering/wp-content/themes/civil-engineering-pro/assets/images/testimonials/testim1.png">
+                <p class="test-inn-content mb-0 pt-3"><sup class="testi-quot"><i class="fa-solid fa-quote-left"></i></sup> Lorem Ipsum proin gravida nibh vel veliauctor aliquenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus mauris</p>
+                <h6 class="testi-branch">David Johnson</h6>
+              </div>
+            </div>
+            <div class="outer_tab tab-pane fade" id="project_tab2">
+              <div class="testi-box text-center px-5 py-3">
+                <img class="testi-leftimg" src="https://trial.ovationthemes.com/civil-engineering/wp-content/themes/civil-engineering-pro/assets/images/testimonials/testim2.png">
+                <p class="test-inn-content mb-0 pt-3"><sup class="testi-quot"><i class="fa-solid fa-quote-left"></i></sup> Lorem Ipsum proin gravida nibh vel veliauctor aliquenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus mauris</p>
+                <h6 class="testi-branch">Mac Thomas</h6>
+              </div>
+            </div>
+            <div class="outer_tab tab-pane fade" id="project_tab3">
+              <div class="testi-box text-center px-5 py-3">
+                <img class="testi-leftimg" src="https://trial.ovationthemes.com/civil-engineering/wp-content/themes/civil-engineering-pro/assets/images/testimonials/testim3.png">
+                <p class="test-inn-content mb-0 pt-3"><sup class="testi-quot"><i class="fa-solid fa-quote-left"></i></sup> Lorem Ipsum proin gravida nibh vel veliauctor aliquenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus mauris</p>
+                <h6 class="testi-branch">Susane Fernandis</h6>
+              </div>
+            </div>
+            <div class="outer_tab tab-pane fade" id="project_tab4">
+              <div class="testi-box text-center px-5 py-3">
+                <img class="testi-leftimg" src="https://trial.ovationthemes.com/civil-engineering/wp-content/themes/civil-engineering-pro/assets/images/testimonials/testim4.png">
+                <p class="test-inn-content mb-0 pt-3"><sup class="testi-quot"><i class="fa-solid fa-quote-left"></i></sup> Lorem Ipsum proin gravida nibh vel veliauctor aliquenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus mauris</p>
+                <h6 class="testi-branch">Jany Luis</h6>
+              </div>
+            </div>
+            <div class="outer_tab tab-pane fade" id="project_tab5">
+              <div class="testi-box text-center px-5 py-3">
+                <img class="testi-leftimg" src="https://trial.ovationthemes.com/civil-engineering/wp-content/themes/civil-engineering-pro/assets/images/testimonials/testim5.png">
+                <p class="test-inn-content mb-0 pt-3"><sup class="testi-quot"><i class="fa-solid fa-quote-left"></i></sup> Lorem Ipsum proin gravida nibh vel veliauctor aliquenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus mauris</p>
+                <h6 class="testi-branch">Harry Melis</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="clearfix"></div>
+  <div class="outer-footer">
+    <div id="footer" style="">
+      <div class="darkbox" id="footer_box">
+        <div class="container footer-cols text-lg-left text-center">
+          <div class="row pb-5 mt-5 pt-5 pt-lg-5 pt-md-5 mt-lg-0 mt-md-0 ft-details">
+            <div class="col-lg-3 col-sm-6 footer1">
+              <aside class="widget widget_block" id="block-7">
+                <h4 class="ft1-head wp-block-heading">About Us</h4>
+              </aside>
+              <aside class="widget widget_block widget_text" id="block-8">
+                <p class="ft1-para">Proin gravida nibh vel velit auctor aliquet. Aenean<br>
+                sollicitudin, lorem quis bibendum auctor, nisi elit conse<br>
+                quat psum, nec sagittis sem nibh id elit. Proin gravida<br>
+                nibh vel velit auctor aliquet. Aenean sollicitudin, lorem<br>
+                quis bibendum auctor, nisi elit consequat psum,</p>
+              </aside>
+            </div>
+            <div class="col-lg-3 col-sm-6 footer2">
+              <aside class="widget widget_nav_menu" id="nav_menu-1">
+                <h3 class="widget-title">Legal</h3>
+                <div class="menu-ot_legal_menu-container">
+                  <ul class="menu" id="menu-ot_legal_menu">
+                    <li class="terms menu-item menu-item-type-custom menu-item-object-custom menu-item-63" id="menu-item-63">
+                      <a href="https://trial.ovationthemes.com/civil-engineering/index.php/terms/">Terms of use</a>
+                    </li>
+                    <li class="privacy menu-item menu-item-type-custom menu-item-object-custom menu-item-64" id="menu-item-64">
+                      <a href="https://trial.ovationthemes.com/civil-engineering/index.php/privacy/">Privacy Policy</a>
+                    </li>
+                    <li class="license menu-item menu-item-type-custom menu-item-object-custom menu-item-65" id="menu-item-65">
+                      <a href="https://trial.ovationthemes.com/civil-engineering/index.php/license/">License agreement</a>
+                    </li>
+                    <li class="Carreers menu-item menu-item-type-custom menu-item-object-custom menu-item-66" id="menu-item-66">
+                      <a href="https://trial.ovationthemes.com/civil-engineering/index.php/Carreers/">Carreers</a>
+                    </li>
+                    <li class="footer-buy-now menu-item menu-item-type-custom menu-item-object-custom menu-item-87" id="menu-item-87">
+                      <a href="https://www.ovationthemes.com/cart/42481212031112:1" target="_blank">Buy Now</a>
+                    </li>
+                  </ul>
+                </div>
+              </aside>
+            </div>
+            <div class="col-lg-3 col-sm-6 footer3">
+              <aside class="widget widget_nav_menu" id="nav_menu-2">
+                <h3 class="widget-title">Links</h3>
+                <div class="menu-ot_link_menu-container">
+                  <ul class="menu" id="menu-ot_link_menu">
+                    <li class="home menu-item menu-item-type-custom menu-item-object-custom menu-item-72" id="menu-item-72">
+                      <a href="https://trial.ovationthemes.com/civil-engineering/index.php/home/">Home</a>
+                    </li>
+                    <li class="pages menu-item menu-item-type-custom menu-item-object-custom menu-item-73" id="menu-item-73">
+                      <a href="https://trial.ovationthemes.com/civil-engineering/index.php/pages/">Pages</a>
+                    </li>
+                    <li class="latest-news menu-item menu-item-type-custom menu-item-object-custom menu-item-74" id="menu-item-74">
+                      <a href="https://trial.ovationthemes.com/civil-engineering/index.php/latest-news/">Blog</a>
+                    </li>
+                    <li class="Projects menu-item menu-item-type-custom menu-item-object-custom menu-item-75" id="menu-item-75">
+                      <a href="https://trial.ovationthemes.com/civil-engineering/index.php/Projects/">Projects</a>
+                    </li>
+                    <li class="faq menu-item menu-item-type-custom menu-item-object-custom menu-item-76" id="menu-item-76">
+                      <a href="https://trial.ovationthemes.com/civil-engineering/index.php/faq/">FAQ</a>
+                    </li>
+                  </ul>
+                </div>
+              </aside>
+            </div>
+            <div class="col-lg-3 col-sm-6 footer4">
+              <aside class="widget widget_block" id="block-9">
+                <h4 class="ft4-head wp-block-heading">Join Us Now</h4>
+              </aside>
+              <aside class="widget widget_block widget_text" id="block-10">
+                <p class="ftr4-para">Subscribe to our newsletter to be in the know</p>
+              </aside>
+              <div class="footer-email-form">
+                <div class="wpcf7 no-js" data-wpcf7-id="47" dir="ltr" id="wpcf7-f47-o2" lang="">
+                  <div class="screen-reader-response">
+                    <p aria-atomic="true" aria-live="polite" role="status"></p>
+                    <ul></ul>
+                  </div>
+                  <form action="/civil-engineering/#wpcf7-f47-o2" aria-label="Contact form" class="wpcf7-form init" data-status="init" method="post" novalidate="novalidate">
+                    <fieldset class="hidden-fields-container">
+                      <input name="_wpcf7" type="hidden" value="47"><input name="_wpcf7_version" type="hidden" value="6.1"><input name="_wpcf7_locale" type="hidden" value=""><input name="_wpcf7_unit_tag" type="hidden" value="wpcf7-f47-o2"><input name="_wpcf7_container_post" type="hidden" value="0"><input name="_wpcf7_posted_data_hash" type="hidden" value="">
+                    </fieldset>
+                    <div class="row ft-form">
+                      <div class="col-lg-12 col-md-12 col-12">
+                        <p><span class="wpcf7-form-control-wrap" data-name="footer-email"><input aria-invalid="false" class="wpcf7-form-control wpcf7-email wpcf7-text wpcf7-validates-as-email ft-email" maxlength="400" name="footer-email" placeholder="Email Id" size="40" type="email" value=""></span></p>
+                      </div>
+                      <div class="col-lg-12 col-md-12 col-12">
+                        <p><input class="wpcf7-form-control wpcf7-submit has-spinner ft-btn" type="submit" value="Submit"></p>
+                      </div>
+                    </div>
+                    <div aria-hidden="true" class="wpcf7-response-output"></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright m-auto" style="">
+          <div class="container">
+            <div class="row ftr-copy">
+              <div class="col-lg-8 col-md-8 col-12 align-self-center text-lg-left text-center">
+                <p class="copy-text py-2 mb-0"><span class="credit_link"><a href="https://www.ovationthemes.com/">© 2022 DESIGN</a></span> <span>, All Rights Reserved</span></p>
+              </div>
+              <div class="col-lg-4 col-md-4 col-12 text-lg-right text-center align-self-center">
+                <div class="ftr-social-icons py-2">
+                  <a class="rounded-circle" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a> <a class="rounded-circle px-3" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a> <a class="rounded-circle" href="https://www.twitter.com/"><i aria-hidden="true" class="fab fa-twitter align-middle"></i></a> <a class="rounded-circle pl-3" href="https://www.linkedin.com/"><i aria-hidden="true" class="fab fa-linkedin-in align-middle"></i></a>
+                </div><a href="javascript:" id="return-to-top"><i class="fas fa-arrow-up"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
+  </script>
+  <script src="https://trial.ovationthemes.com/civil-engineering/wp-content/themes/civil-engineering-pro/assets/js/jquery.superfish.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js">
+  </script>
+  <script src="https://trial.ovationthemes.com/civil-engineering/wp-content/themes/civil-engineering-pro/assets/js/custom.js">
+  </script>
+  <script src="popup-video.js"></script>
+
+              <script>
+                $(document).ready(function() {
+                $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+                  disableOn: 700,
+                  type: 'iframe',
+                  mainClass: 'mfp-fade',
+                  removalDelay: 160,
+                  preloader: false,
+
+                  fixedContentPos: false
+                  });
+                });
+              </script>
+
+</body>
+</html>
